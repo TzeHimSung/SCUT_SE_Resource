@@ -1,0 +1,101 @@
+
+TP Lex and Yacc Version 3.0 as of April 1991, Version 3.0a as of May 1992
+Copyright (c) 1990-92 by Albert Graef, Schillerstrasse 18, 6509 Schornsheim,
+Germany (ag@muwiinfa.geschichte.uni-mainz.de)
+All rights reserved
+
+This disk contains TP Lex and Yacc, compiler generator tools for Borland's
+Turbo Pascal (4.0 or later), running under MS-DOS (3.0 or later).
+
+(Turbo Pascal is a trademark of Borland International.)
+
+The TP Lex and Yacc software is licensed free of charge and may be copied
+and redistributed for non-profit purposes. There is no warranty of any kind.
+In particular, I do not guarantee that the software is free of bugs, or fits
+some particular purpose, and I take no responsibility for damages or any
+other consequences of its use.
+
+The manual is contained in the file TPLY.DOC on the disk. It can be printed
+using the DOS command `copy tply.doc prn'. (A TeX'ed version of the manual
+is contained in the file TPLY.TEX.) The manual provides a rather terse
+description of TP Lex and Yacc and you should follow the references given
+there for further reading.
+
+As distributed, the TP Lex and Yacc library units (LEXLIB.TPU and
+YACCLIB.TPU) are compiled with Turbo Pascal 6.0; to use them with other
+Turbo Pascal versions you probably have to recompile these units (sources
+LEXLIB.PAS and YACCLIB.PAS on the distribution disk).
+
+Older versions of TP Lex and Yacc are no longer supported. Most programs
+written for TP Lex and Yacc 2.0 should not to be too difficult to adapt
+to the new version. The major differences are:
+
+- The TP Lex library routine `start' is now used to set the start state of
+  the lexical analyzer (in V2.0, this routine was named `begin_').
+
+- TP Lex no longer supports character tables (%T).
+
+- TP Lex now provides an optimization option which causes TP Lex to generate
+  minimal DFA's, and a verbose option to generate a readable description
+  (.LST file) of the constructed DFA.
+
+- The TP Yacc error message printing routine is now named `yyerror' (as in
+  the UNIX version); in V2.0 it was named `yymsg'. The V2.0 routine named
+  `yyerror' (which triggered error recovery in the parser) is now named
+  `yyerrlab'.
+
+- TP Yacc no longer supports %union definitions; instead, value types are
+  specified directly using tags of the form <type-identifier> in %token
+  and %type definitions. TP Yacc automatically generates a suitable
+  variant record type (YYSType) from the type definitions in the grammar.
+
+- TP Yacc no longer generates a separate header (.H) file; all definitions
+  for the lexical analyzer (token numbers, yylval variable) are put into
+  the .PAS output file. Hence the lexical analyzer should be included right
+  behind the parser (e.g., in the auxiliary procedures section of the Yacc
+  grammar); it cannot be put into a separate unit any more. Although this
+  might seem a little restrictive, I decided to use this scheme in order to
+  facilitate communication between parser and lexical analyzer, and I think
+  that it actually simplifies matters for the programmer.
+
+- TP Yacc provides an option to generate the parser description (.LST file)
+  and an option to trigger debugging output of the parser.
+
+- The code templates for the TP Lex and Yacc output files are now supplied
+  as ASCII files. This gives you the possibility to adapt the yylex and
+  yyparse routines to your applications.
+
+- The DFA and LALR parser construction algorithms have been reimplemented
+  from scratch, and they are now far more efficient than in the 2.0
+  version.
+
+Version 3.0a fixes the following known bugs of the 3.0 version:
+
+- TP Lex 3.0 sometimes loses transitions to the same state, e.g. in the
+  following rule:
+    a(b|c|d)*           return(1);
+
+- TP Yacc 3.0 erases type and precedence information in multiple definitions
+  of the same token, e.g.:
+    %token <Integer> OP
+    %left OP
+
+- TP Yacc 3.0 loses rule precedence information in case of actions within
+  a rule following the rightmost terminal of the rule, e.g.:
+    %token OP
+    %%
+    expr : OP { act; } expr ;
+
+The following incompatibility between TP and UNIX Lex is known, but will
+NOT be fixed:
+
+- The TP Lex library unit starts counting line numbers at 0, incrementing
+  the count BEFORE a line is read (in contrast, UNIX Lex initializes
+  yylineno to 1 and increments it AFTER the line end has been read). This
+  is motivated by the way in which TP Lex maintains the current line,
+  and will not affect your programs unless you explicitly reset the
+  yylineno value (e.g., when opening a new input file). In such a case
+  you should set yylineno to 0 rather than 1.
+
+5-13-92 Albert Graef
+

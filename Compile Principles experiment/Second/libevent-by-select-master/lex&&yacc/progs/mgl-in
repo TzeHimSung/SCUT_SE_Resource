@@ -1,0 +1,16 @@
+screen first 
+title "First"
+
+item "dummy line" command dummy action ignore attribute visible
+item "run shell" command shell action execute "/bin/sh" attribute visible
+
+end first 
+
+screen second
+
+title "Second" 
+
+item "exit program" command exit action quit attribute invisible
+item "other menu" command first action menu first attribute visible
+
+end second

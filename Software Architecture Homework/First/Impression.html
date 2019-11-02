@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Impression.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+	font-size: 14px;
+	padding: 0 12px;
+	line-height: 22px;
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	color: #4080D0;
+	text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
+	font-size: inherit;
+	line-height: auto;
+}
+
+a:hover {
+	color: #4080D0;
+	text-decoration: underline;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left: 5px solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 14px;
+	line-height: 19px;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+.mac code {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+/** Theming */
+
+.vscode-light,
+.vscode-light pre code {
+	color: rgb(30, 30, 30);
+}
+
+.vscode-dark,
+.vscode-dark pre code {
+	color: #DDD;
+}
+
+.vscode-high-contrast,
+.vscode-high-contrast pre code {
+	color: white;
+}
+
+.vscode-light code {
+	color: #A31515;
+}
+
+.vscode-dark code {
+	color: #D7BA7D;
+}
+
+.vscode-light pre:not(.hljs),
+.vscode-light code > div {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre:not(.hljs),
+.vscode-dark code > div {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre:not(.hljs),
+.vscode-high-contrast code > div {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+.vscode-light blockquote,
+.vscode-dark blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.vscode-high-contrast blockquote {
+	background: transparent;
+	border-color: #fff;
+}
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family:  "Meiryo", "Segoe WPC", "Segoe UI", "SFUIText-Light", "HelveticaNeue-Light", sans-serif, "Droid Sans Fallback";
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+</head>
+<body>
+<h1 id="%E6%96%87%E7%8C%AE%E8%A7%A3%E8%AF%BB">文献解读</h1>
+<p>201730681303 成子谦 软件工程一班</p>
+<h2 id="%E8%A7%A3%E8%AF%BB%E6%96%87%E7%8C%AE">解读文献</h2>
+<ul>
+<li>Paakkonen, P., &amp; Pakkala, D. (2015). Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems. Big Data Research, 2(4), 166-186.</li>
+<li>Perry, D. E., &amp; Wolf, A. L. (1992). Foundations for the study of software architecture. ACM Sigsoft Software Engineering Notes, 17(4), 40-52.</li>
+</ul>
+<h2 id="%E6%96%87%E7%8C%AE%E5%86%85%E5%AE%B9">文献内容</h2>
+<h3 id="reference-architecture-and-classification-of-technologies-products-and-services-for-big-data-systems"><strong>Reference Architecture and Classification of Technologies, Products and Services for Big Data Systems.</strong></h3>
+<p>这篇论文主要关注大数据系统的参考架构、技术、商业产品和服务，目的是促进大数据系统建设中的架构设计，技术或商业产品和服务的选择。</p>
+<p>论文提出了以下研究问题：</p>
+<ol>
+<li>哪些元素构成大数据系统的参考架构？</li>
+<li>如何对大数据系统的技术和产品/服务进行分类？</li>
+</ol>
+<p>从而引出了论文的主要目的：</p>
+<ol>
+<li>针对大数据系统，设计独立于设计技术的参考架构。</li>
+<li>针对参考架构对相关技术、产品或服务进行分类。</li>
+</ol>
+<p>论文首先介绍了利用大数据调查参考架构和用例的相关工作。主要研究问题涉及大数据参考架构中包含的元素，并设计了包括功能组件、数据存储和连接数据流的参考架构。该架构基于已发布的大数据用例的经验数据，采用归纳推理构建。此外，论文还介绍了体系结构模型和用例之间的映射。随后对大数据领域的相关工作进行了调查。调查的重点是流处理、图形建模、商业智能和可视化技术、大数据基准测试、虚拟化和云解决方案、新技术框架和商业产品和服务。</p>
+<p>第二个研究问题侧重于大数据系统的技术和产品服务的分类。论文提供了参考分类，其中包括来自审查的大数据用例和相关工作的材料。</p>
+<p>作者首先从文献中调查大数据研究、参考架构和用例；随后，提出了大数据系统参考架构的设计，该架构是在对所提出的用例进行分析的基础上进行归纳构建的；最后，提供分类以创建大数据研究、相关技术、产品和服务的整体图景。作者认为：实现大数据系统时，所需要考虑的重要因素包括系统的体系结构设计、底层技术以及产品或服务的利用。参考体系结构应有助于创建具体的体系结构，并通过在大数据系统中包含典型的功能和数据流来增加对整体情况的理解。技术和产品/服务的分类应有助于实现系统功能的决策。同时，了解相关技术的架构和性能特征也很重要。</p>
+<p>论文随后分析了7个大数据用例中实现架构的功能，并基于分析结果构建了参考架构。大数据用例包括：</p>
+<ul>
+<li>Facebook的数据分析基础设施</li>
+<li>LinkedIn的数据分析基础设施</li>
+<li>Twitter的两种不同基础架构</li>
+<li>Netflix的数据分析基础架构</li>
+<li>BlockMon，一个高性能流分析平台</li>
+<li>网络流量测量和分析解决方案</li>
+<li>FIU-Miner，一个促进复杂数据分析过程的系统</li>
+</ul>
+<p>论文基于所审查的大数据用例创建了技术、产品和服务的初始分类：</p>
+<ul>
+<li>用例中的数据通常被收集到数据库或日志文件中。</li>
+<li>关系数据库被用于存储重要的用户相关数据。</li>
+<li>NoSQL数据库或内存存储用于数据分析结果的中间或最终存储。</li>
+<li>特殊日志工具用于存储基于流的数据。</li>
+<li>结构化数据通常保存在分布式文件系统中。</li>
+<li>用例的数据处理技术可以分为批处理和流处理。</li>
+<li>具有实时约束的作业需要特殊的技术和算法。</li>
+<li>批处理用于时间要求不严格的工作。</li>
+<li>批量处理的工作安排了特殊工具。</li>
+<li>OLAP处理转换了用于提供OLAP查询的数据。</li>
+<li>处理后的数据也可以通过商业智能工具进行可视化。</li>
+</ul>
+<p>分析的用例仅涵盖大数据领域的部分研究和商业服务。相关工作调查侧重于流处理、图形存储、基准测试、虚拟化和云解决方案、商业智能和可视化工具、新颖技术框架和商业服务。</p>
+<h3 id="foundations-for-the-study-of-software-architecture"><strong>Foundations for the study of software architecture</strong></h3>
+<p>这篇论文的目的是为软件架构奠定基础。</p>
+<p>论文首先通过吸引几个成熟的架构学科来开发软件架构的直觉。在这种直觉的基础上，论文提出了一个软件体系结构模型，由三个部分组成：</p>
+<ol>
+<li>元素</li>
+<li>形式</li>
+<li>基本原理</li>
+</ol>
+<p>元素是处理元素，数据元素或连接元素。表单是根据元素的属性和元素之间的关系，即元素的约束定义的。基本原理为系统约束提供了体系结构的基础，系统约束通常来自系统需求。论文在架构和架构风格的上下文中讨论模型的组件，并提供一个扩展示例来说明一些重要的架构和样式注意事项。最后，论文介绍了构造的软件架构方法的一些好处，总结贡献并将论文的方法与其他当前工作相关联。</p>
+<p>软件设计在20世纪70年代受到研究人员的极大关注。这项研究是针对20世纪60年代首次认识到开发大规模软件系统的独特问题而出现的。研究的前提是设计是一项独立于实现的活动，需要特殊的符号、技术和工具。该软件设计研究的结果现已开始作为计算机辅助软件工程工具进入市场。在20世纪80年代，软件工程研究的重点从专门的软件设计转移到将设计和设计过程集成到更广泛的软件过程及其管理环境中。这种集成使得软件设计开发的许多符号和技术被实现语言所吸收。例如支持“大规模编程”的概念。如果不混淆，设计和实现之间的区别，这种集成往往很模糊。</p>
+<p>在20世纪80年代，描述和分析软件系统方面有很大进步。这里指的是正式的描述性技术和复杂的键入概念，使人们能够更有效地推理软件系统。例如，人们能够更有效地推断“一致性”和“不一致性”，并且能够谈论“类型一致性”而不仅仅是“类型等价”。可以相信，20世纪90年代将成为软件架构的十年。与“设计”相比，使用术语“架构”来引出编码、抽象、标准、正式培训和风格的概念。</p>
+<p>虽然在定义特定软件体系结构方面，甚至在开发体系结构开发过程的一般性支持方面做了一些工作，现在是时候重新审视它们。在软件过程和软件过程管理的更广泛的背景下的体系结构，以及编组已经开发的各种新技术。人们期望从作为主要学科的软件架构的出现中获得的一些好处：</p>
+<ol>
+<li>架构作为满足需求的框架。</li>
+<li>架构作为设计的技术基础，是成本估算和过程管理的管理基础。</li>
+<li>架构作为重用的有效基础。</li>
+<li>架构作为依赖的基础和一致性分析。</li>
+</ol>
+<p>因此，研究的主要目标是支持软件架构规范的开发和使用。</p>
+<p>在介绍软件架构模型之前，论文通过以下方式为其奠定了哲学基础：</p>
+<ol>
+<li>通过类比现有学科来发展对软件架构的认识。</li>
+<li>在多级产品范例中提出软件架构的上下文。</li>
+<li>为软件架构作为一个单独的学科提供一些动力。</li>
+</ol>
+<p>值得注意的是，论文没有命名软件架构。因为作者认为存在不同类型的软件体系结构，但尚未将它们正式化或制度化。作者认为，之所以存在目前的状况，是因为本应有这么多的软件架构，而不是因为存在这么多。</p>
+<p>作者可以抽象到软件架构中的具体级别，例如进程和进程间通信。但是，需要考虑的拓扑数量很多，并且这些拓扑通常没有名称。此外，作者强调与节点和连接的拓扑不同的方面。作者考虑的是诸如进程的放置或进程间通信的种类之类的问题。因此，即使人们可以从类似的抽象层次来看待架构元素，人们也不会从使用网络作为软件架构的类比中获益。</p>
+<h2 id="2006%E5%B9%B4%E8%87%B3%E4%BB%8A%E8%BF%9B%E5%B1%95%E6%83%85%E5%86%B5"><strong>2006年至今进展情况</strong></h2>
+<p>从软件体系结构研究和应用的现状来看，当前对软件体系结构的描述，在很大程度上还停留在非形式化的基础上，依赖于软件设计师个人经验和技巧。在目前通用的软件开发方法中，其对软件体系结构的描述通常是采用非形式化的图和文本，无法描述系统期望的存在与构件之间的接口，更不能描述不同的组成系统组合关系的意义。这种描述方法既难以被开发人员理解，又难以适于进行形式化分析和模拟，且缺乏相应的支持工具帮助设计师完成设计工作，更不能用来分析其一致性、完整性等特性。</p>
+<p>关于软件体系结构的研究工作主要在国外展开，国内到目前为止对于软件体系结构的研究尚处在起步阶段。</p>
+<h2 id="%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E7%A0%94%E7%A9%B6%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%9F"><strong>什么是软件体系结构？为什么需要研究软件体系结构？</strong></h2>
+<p>软件体系结构是具有一定形式的结构化元素，即构件的集合，包括处理构件、数据构件和连接构件。处理构件负责对数据进行加工，数据构件是被加工的信息，连接构件把体系结构的不同部分组组合连接起来。这一定义注重区分处理构件、数据构件和连接构件，这一方法在其他的定义和方法中基本上得到保持。</p>
+<p>软件体系结构的发展是和计算机抽象技术发展同步的，大规模的复杂软件系统的性能和质量对软件工程技术提出了新的需求。随着软件系统规模越来越大、越来越复杂、整个系统的结构和规格说明就显得越来越重要。对于大规模的发杂软件系统来说，总体的系统结构设计和规格说明比起对计算的算法和数据结构的选择变得越明显重要。</p>
+
+</body>
+</html>

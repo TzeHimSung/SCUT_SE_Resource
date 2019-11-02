@@ -1,0 +1,27 @@
+
+(* KWTBL keyword table lookup procedure V1.0 6-7-91 AG *)
+
+function kwlookup( kw : String; var code : Integer ) : Boolean;
+  (* checks whether kw is in the keyword table; if so, returns the
+     corresponding integer code *)
+  var m, n, k : integer;
+  begin
+    (* binary search: *)
+    m := 1; n := nkws;
+    while m<=n do
+      begin
+        k := m+(n-m) div 2;
+        if kw=kwtbl[k] then
+          begin
+            kwlookup := true;
+            code := kwcod[k];
+            exit
+          end
+        else if kw>kwtbl[k] then
+          m := k+1
+        else
+          n := k-1
+      end;
+    kwlookup := false
+  end(*kwlookup*);
+

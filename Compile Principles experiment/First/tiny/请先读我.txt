@@ -1,0 +1,1 @@
+可执行程序是scanner，请在linux环境下通过执行./scanner命令来启动程序
