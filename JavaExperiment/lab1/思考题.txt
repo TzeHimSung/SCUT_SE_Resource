@@ -1,0 +1,12 @@
+1
+因为TestBanking类也调用了Account类和Customer类
+编译器根据环境变量classpath，先检查jdk lib里有没有所需要的类，没有就去当前工作目录下找
+
+2
+javac customer.java只会编译当前customer类，当遇到Account类的语句时，会在当前目录和子目录找Account.class
+然而Account.java还没有被编译，所以编译失败
+
+3
+classpath指明所有类的位置
+jdk编译器会先找jdk lib里有没有所需要的类，没有就去当前工作目录下找
+jvm通过栈上的reference数据在操作堆上的具体对象，可以通过句柄和指针两种方式来定位
