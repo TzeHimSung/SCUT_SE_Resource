@@ -14,6 +14,9 @@ Including(currently):
 - UML experiment 
 - Computer network experiment 
 - Software architecture homework 
+- Software architecture big task
+- Software architecture exam
+- Software testing
 - Cloud computing experiment 
 - Military theory homework 
 
