@@ -1,6 +1,6 @@
 ## SCUT_SE_Resource
 
-Resource of $School of Software Engineering$, South China University of Technology (SCUT).
+Resource of School of Software Engineering, South China University of Technology (SCUT).
 
 Including(currently):
 
@@ -16,6 +16,7 @@ Including(currently):
 - Software architecture homework 
 - Software architecture big task
 - Software architecture exam
+- Software architecture review resources
 - Software testing
 - Cloud computing experiment 
 - Military theory homework 
