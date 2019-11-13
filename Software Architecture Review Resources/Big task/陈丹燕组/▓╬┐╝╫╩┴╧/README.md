@@ -1,0 +1,50 @@
+# doc
+Documentation for EI331 and EI333 end term project
+
+请用PlantUML渲染文件
+```
+@startsalt
+{
+    {T
+        doc
+            ++README
+            ++doc_meta
+            ++documentation_convention
+            ++team_project_proposal.md
+            +计划
+                ++可行性研究报告.md
+                ++项目开发计划.md
+                ++风险列表.md
+            +需求定义和分析
+                ++软件需求规约.md
+                ++词汇表.md
+                ++用户界面.md
+                ++对象模型.md
+                ++用例模型.md
+                ++场景.md
+                ++动态模型_顺序图.md
+                ++/Diagrams
+            +设计
+                ++软件设计模型.md
+                ++软件架构文档.md
+                ++对象模型.md
+                ++顺序图.md
+                ++/Diagrams
+            +构造
+                ++模块开发卷宗.md
+            +测试
+                ++软件测试计划.md
+                ++软件测试总结报告.md
+            +交付
+                ++交付清单.md
+                ++用户手册.md
+                ++软件验收报告.md            
+            +总结
+                ++软件项目总结报告.md
+
+            +非交付文档
+                ++Java编码风格指南    
+    }
+}
+@endsalt
+```

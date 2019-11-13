@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="186px" preserveAspectRatio="none" style="width:210px;height:186px;" version="1.1" viewBox="0 0 210 186"
+    width="210px" zoomAndPan="magnify"><defs><filter height="300%" id="fg04t39as5kj9" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster LocalStorageSubsystem--><rect fill="#FFFFFF" filter="url(#fg04t39as5kj9)" height="83" style="stroke: #000000; stroke-width: 1.5;" width="185" x="14" y="16"/><rect fill="#FFFFFF" height="10" style="stroke: #000000; stroke-width: 1.5;" width="15" x="179" y="21"/><rect fill="#FFFFFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="177" y="23"/><rect fill="#FFFFFF" height="2" style="stroke: #000000; stroke-width: 1.5;" width="4" x="177" y="27"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="169" x="22" y="42.5352">LocalStorageSubsystem</text><!--class LocalStorage--><rect fill="#FEFECE" filter="url(#fg04t39as5kj9)" height="48" id="LocalStorage" style="stroke: #A80036; stroke-width: 1.5;" width="104" x="54" y="43"/><ellipse cx="69" cy="59" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M71.9731,64.6431 Q71.3921,64.9419 70.7529,65.0913 Q70.1138,65.2407 69.4082,65.2407 Q66.9014,65.2407 65.5815,63.5889 Q64.2617,61.937 64.2617,58.8159 Q64.2617,55.6865 65.5815,54.0347 Q66.9014,52.3828 69.4082,52.3828 Q70.1138,52.3828 70.7612,52.5322 Q71.4087,52.6816 71.9731,52.9805 L71.9731,55.7031 Q71.3423,55.1221 70.7488,54.8523 Q70.1553,54.5825 69.5244,54.5825 Q68.1797,54.5825 67.4949,55.6492 Q66.8101,56.7158 66.8101,58.8159 Q66.8101,60.9077 67.4949,61.9744 Q68.1797,63.041 69.5244,63.041 Q70.1553,63.041 70.7488,62.7712 Q71.3423,62.5015 71.9731,61.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="72" x="83" y="63.5352">LocalStorage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="55" x2="157" y1="75" y2="75"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="55" x2="157" y1="83" y2="83"/><ellipse cx="106" cy="156" fill="#FEFECE" filter="url(#fg04t39as5kj9)" rx="5" ry="5" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="62" y="172.6016">LocalVSSAccess</text><!--link LocalStorage to LocalStoragelol142--><path d="M106,91.3196 C106,111.7007 106,139.247 106,150.6827 " fill="none" id="LocalStorage-LocalStoragelol142" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml Diagrams/LocalStorageSubsystemClassDiagram
+component LocalStorageSubsystem {
+    class LocalStorage {
+
+    }
+}
+LocalStorage - -() LocalVSSAccess
+@enduml
+
+PlantUML version 1.2018.01(Mon Jan 29 02:08:22 CST 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 9+181
+Operating System: Mac OS X
+OS Version: 10.12.6
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>

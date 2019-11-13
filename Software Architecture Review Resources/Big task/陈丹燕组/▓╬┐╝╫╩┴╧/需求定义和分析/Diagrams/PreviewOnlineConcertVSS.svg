@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="291px" preserveAspectRatio="none" style="width:714px;height:291px;" version="1.1" viewBox="0 0 714 291"
+    width="714px" zoomAndPan="magnify"><defs><filter height="300%" id="fus66we0vqa0v" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fus66we0vqa0v)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="218.5" y="125.7988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="188" x="225.5" y="146.334">:PreviewOnlineConcertPage</text><line style="stroke: #000000; stroke-width: 1.0;" x1="225.5" x2="413.5" y1="148.334" y2="148.334"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="26" x2="26" y1="86.4883" y2="279.2188"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="116" x2="116" y1="86.4883" y2="279.2188"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="321.5" x2="321.5" y1="158.543" y2="279.2188"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="570.5" x2="570.5" y1="86.4883" y2="279.2188"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="31" x="8" y="83.5352">User</text><line style="stroke: #000000; stroke-width: 1.0;" x1="8" x2="39" y1="85.5352" y2="85.5352"/><ellipse cx="26.5" cy="13" fill="#FEFECE" filter="url(#fus66we0vqa0v)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M26.5,21 L26.5,48 M13.5,29 L39.5,29 M26.5,48 L13.5,63 M26.5,48 L39.5,63 " fill="none" filter="url(#fus66we0vqa0v)" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FEFECE" filter="url(#fus66we0vqa0v)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="119" x="55" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="105" x="62" y="71.5352">:PreviewConcer</text><line style="stroke: #000000; stroke-width: 1.0;" x1="62" x2="167" y1="73.5352" y2="73.5352"/><rect fill="#FEFECE" filter="url(#fus66we0vqa0v)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="269" x="434.5" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="255" x="441.5" y="71.5352">onlineConcertVSS:VirtualSoundSpace</text><line style="stroke: #000000; stroke-width: 1.0;" x1="441.5" x2="696.5" y1="73.5352" y2="73.5352"/><polygon fill="#A80036" points="104.5,113.4883,114.5,117.4883,104.5,121.4883,108.5,117.4883" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="3" x2="110.5" y1="117.4883" y2="117.4883"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="10" y="113.0566">&lt;&lt;create&gt;&gt;</text><polygon fill="#A80036" points="206.5,142.7988,216.5,146.7988,206.5,150.7988,210.5,146.7988" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="116.5" x2="212.5" y1="146.7988" y2="146.7988"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="78" x="123.5" y="142.3672">&lt;&lt;create&gt;&gt;</text><rect fill="#FEFECE" filter="url(#fus66we0vqa0v)" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="202" x="218.5" y="125.7988"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" text-decoration="underline" textLength="188" x="225.5" y="146.334">:PreviewOnlineConcertPage</text><line style="stroke: #000000; stroke-width: 1.0;" x1="225.5" x2="413.5" y1="148.334" y2="148.334"/><polygon fill="#A80036" points="559,188.2871,569,192.2871,559,196.2871,563,192.2871" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="321.5" x2="565" y1="192.2871" y2="192.2871"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="328.5" y="187.8555">get metadata</text><polygon fill="#A80036" points="332.5,217.5977,322.5,221.5977,332.5,225.5977,328.5,221.5977" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="326.5" x2="570" y1="221.5977" y2="221.5977"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="58" x="338.5" y="217.166">metadata</text><polygon fill="#A80036" points="127.5,251.9082,117.5,255.9082,127.5,259.9082,123.5,255.9082" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="121.5" x2="320.5" y1="255.9082" y2="255.9082"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="107" x="133.5" y="251.4766">display metadata</text><path d="M326,234.9082 L326,259.9082 L541,259.9082 L541,244.9082 L531,234.9082 L326,234.9082 " fill="#FBFB77" filter="url(#fus66we0vqa0v)" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M531,234.9082 L531,244.9082 L541,244.9082 L531,234.9082 " fill="#FBFB77" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="194" x="332" y="252.4766">details are left out for designs.</text><!--
+@startuml Diagrams/PreviewOnlineConcertVSS
+hide footbox
+skinparam sequenceParticipant underline
+actor User as user
+
+participant ":PreviewConcer" as page
+participant ":PreviewOnlineConcertPage" as control
+participant "onlineConcertVSS:VirtualSoundSpace" as vss
+create page
+[-> page: <<create>>
+create control
+page -> control: <<create>>
+control -> vss: get metadata
+vss -> control: metadata
+control -> page: display metadata
+note right
+details are left out for designs.
+end note
+@enduml
+
+PlantUML version 1.2018.01(Mon Jan 29 02:08:22 CST 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 9+181
+Operating System: Mac OS X
+OS Version: 10.12.6
+Default Encoding: UTF-8
+Language: zh
+Country: CN
+--></g></svg>
