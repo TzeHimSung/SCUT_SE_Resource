@@ -1,0 +1,19 @@
+Suppose there are some interaction scenarios for a small project management team, which includes the following interactive roles, devices and tasks (see more in the following pictures):
+1)	Project members communicate and collaborate with the interactive devices, such as intelligent phone, pad and PC; ???
+2)	Users login the targeted system with their familiar styles; ???
+3)	As a project manager, the user can create the team, create the project and invite the project members with some effective ways, such as eMail, anytime and anywhere.  ????
+4)	One project manager can create more than one team, and one team can own many projects and one project can own many project members. ????
+5)	Project manager can start and manage the communication with members anytime and anywhere.   ???
+6)	Project manager can create the task list and when creating the task, he or she can assign the task to some member with a deadline. ????
+7)	Project manager can know about the dynamic state of the project. ????
+8)	Project members can communicate with each other by some agile styles, such as memo or note. ????
+9)	Project members communicate with each other in the way of task, memo, discussion, week report, and reminding. ????
+10)	 Project members accept the assignment and give feedback for the assignment. ????
+11)	 Project members can know about the state of his or her participation of the project by   checking up the finished or unfinished assignment. ???
+12)	 Each project member can equally know about the latest status of the project.  ???
+13)	 All of the messages, which have relation to the members, would be informed to the members as soon as possible.  ??
+    As a software architect of the project, in order to meet the demands of the interactive scenarios stated above£¬you were asked to design a software product with commercial value following the steps of the ADD (Attribute-Driven Design) method.
+1.	Please present the requirements specification for the system with UML use case diagram.
+2.	Please present the tabular form of the Utility Tree with 5 ASRs (architecture significant requirements) that have high business value and architecture impact of including it.
+3.	Please present the architecture design specification by the module decomposition view, concurrency view and deployment view respectively with the UML package diagram, sequence diagram and deployment diagram.
+4.	Please explain the architecture design specification in detail by which architecture tactics are chosen and how the 5 ASRs listed above are satisfied . 
