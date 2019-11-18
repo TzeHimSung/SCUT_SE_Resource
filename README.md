@@ -19,11 +19,12 @@ Including(currently):
 - Software architecture review resources
 - Software testing
 - Cloud computing experiment 
+- IOT experiment  
 - Military theory homework 
 - Template of class paper 
 
 
-Author: $JHSeng$
+Author: JHSeng
 
 Date: 11/2/19
 
