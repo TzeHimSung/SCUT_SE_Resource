@@ -9,7 +9,7 @@ Including(currently):
 - Compile principles experiment 
 - Java experiment 
 - Java homework (Liu Guixi’s requirement) 
-- Operating system experiment ($3^{rd} \& 4^{th}$) 
+- Operating system experiment 
 - Database training 
 - UML experiment 
 - Computer network experiment 
