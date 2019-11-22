@@ -1,7 +1,0 @@
-#ignore the gitignore file
-#.gitignore
-#ignore the .o .a file  
-*.[oa]
-*~
-#ignore the popnet file  
-popnet
