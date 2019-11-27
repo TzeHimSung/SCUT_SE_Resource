@@ -2,7 +2,7 @@
 
 Resource of School of Software Engineering, South China University of Technology (SCUT).
 
-Including(currently):
+Currently includes:
 
 - C++ experiment 
 - Data structure experiment 
@@ -26,7 +26,7 @@ Including(currently):
 - Template of experiment report
 
 
-Author: JHSeng
+Author: TzeHim Sung (JHSeng)
 
 Date: 11/2/19
 
