@@ -19,9 +19,11 @@ Including(currently):
 - Software architecture review resources
 - Software testing
 - Cloud computing experiment 
+- Robot programming experiment
 - IOT experiment  
 - Military theory homework 
 - Template of class paper 
+- Template of experiment report
 
 
 Author: JHSeng
