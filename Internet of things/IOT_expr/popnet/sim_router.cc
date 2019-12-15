@@ -482,7 +482,6 @@ void sim_router_template::sw_arbitration() {
     }
 }
 
-
 //***************************************************************************//
 //flit out buffer to the output buffer
 void sim_router_template::flit_outbuffer() {
