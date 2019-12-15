@@ -580,10 +580,10 @@ void sim_router_template::flit_traversal(long i) {
         VC_type outadd_t = output_module_.get_add(i);
         power_module_.power_link_traversal(i, flit_t.data());
 
-        cout << ">> " << flit_t << ": " << endl;
-        for (auto i : wire_add_t)
-            cout << i << " ";
-        puts("");
+        // cout << ">> " << flit_t << ": " << endl;
+        // for (auto i : wire_add_t)
+        //     cout << i << " ";
+        // puts("");
 
         output_module_.remove_flit(i);
         output_module_.remove_add(i);
