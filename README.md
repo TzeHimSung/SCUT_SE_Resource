@@ -15,12 +15,12 @@ Currently includes:
 - Computer network experiment 
 - Software architecture homework 
 - Software architecture big task
-- Software architecture exam
 - Software architecture review resources
 - Software testing
 - Cloud computing experiment 
 - Robot programming experiment
-- IOT experiment  
+- IOT experiment
+- IOT big task
 - Military theory homework 
 - Template of class paper 
 - Template of experiment report
