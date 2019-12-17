@@ -582,7 +582,7 @@ void sim_router_template::flit_traversal(long i) {
 
         // cout << ">> " << flit_t << ": " << endl;
         // for (auto i : wire_add_t)
-        //     cout << i << " ";
+        // cout << i << endl;
         // puts("");
 
         output_module_.remove_flit(i);
