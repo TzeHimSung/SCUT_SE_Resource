@@ -41,7 +41,7 @@ sim_foundation::sim_foundation():
 	for(long i = 0; i < router_counter_; i++) {
 		inter_network_.push_back(sim_router_template
 			(phy_ports_t, vc_size, buff_size, outbuff_size, add_t, 
-			 ary_size_, flit_size)); 
+			 ary_size_, flit_size, cube_size_)); 
 		//assign the address of the router
 		add_t[cube_size_ - 1]++;
 		for(long j = cube_size_ -1; j > 0; j--) {

@@ -1,2 +1,3 @@
-#!/bin/bash
-./popnet -A 9 -c 2 -V 1 -B 12 -O 12 -F 4 -L 1000 -T 20000 -r 1 -I ./random_trace/bench -R 0
+# !/bin/sh
+./popnet -A 2 -c 3 -V 3 -B 12 -O 12 -F 4 -L 5 -T 1000 -r 1 -I ./eg_3d/eg -R 0
+# ./popnet -A 2 -c 3 -V 3 -B 12 -O 12 -F 4 -L 5 -T 1000 -r 1 -I ./eg_3d2/eg -R 0

@@ -245,6 +245,7 @@ class sim_router_template {
 		//initial random number
 		Data_type init_data_;
 		long ary_size_;
+		long cube_size_;
 		long flit_size_; //size of 64 bits
 		long physic_ports_;
 		long vc_number_;
@@ -290,7 +291,7 @@ class sim_router_template {
 		//a: phy ports. b: vc number. c: buffer size. d: output buffer size.
 		//e: its address  f: ary_size g: flit_size
 		sim_router_template(long a, long b, long c, long d, 
-				const add_type & e, long f, long g);
+				const add_type & e, long f, long g, long cube_size);
 		//-------------------------------------------------------------------//
 		//simulator evoking
 		void router_sim_pwr();

@@ -50,13 +50,14 @@ sim_router_template::sim_router_template():
 //a : physical ports, b: vc number, c: buffer size,  d: output
 //buffer size, e: address  f: ary_size_ g: flit_size_
 sim_router_template::sim_router_template(long a, long b, long c,
-	long d, const add_type & e, long f, long g):
+	long d, const add_type & e, long f, long g, long cube_size):
 	address_(e),
 	input_module_(a, b),
 	output_module_(a, b, c, d),
 	power_module_(a, b, g),
 	init_data_(),
 	ary_size_(f),
+	cube_size_(cube_size),
 	flit_size_(g),
 	physic_ports_(a),
 	vc_number_(b),
@@ -579,9 +580,13 @@ void sim_router_template::flit_outbuffer()
 //flit traversal through the link stage
 void sim_router_template::flit_traversal(long i)
 {
+    // 保存模拟时间用以计算耗时
 	time_type event_time = mess_queue::m_pointer().current_time();
 	if(output_module_.outbuffers(i).size() > 0) {
+        // 每步加上设定的传输耗时
 		time_type flit_delay_t = WIRE_DELAY_ + event_time;
+
+        // 计算下一跳的目的坐标
 		add_type wire_add_t = address_;
 		long wire_pc_t ;
 		if((i % 2) == 0) {
@@ -590,17 +595,29 @@ void sim_router_template::flit_traversal(long i)
 			if(wire_add_t[(i-1) / 2] == ary_size_) {
 				wire_add_t[(i-1) / 2] = 0;
 			}
-		}else {
+		} else {
 			wire_pc_t = i + 1;
 			wire_add_t[(i - 1) / 2] --;
 			if(wire_add_t[(i-1) / 2] == -1) {
 				wire_add_t[(i-1) / 2] = ary_size_ - 1;
 			}
 		}
+
+        // 创建 flit_template 对象
 		flit_template flit_t(output_module_.get_flit(i));
+
+        // 在这里输出当前 flit 的编号
+		cerr << ">> " << flit_t;
+		cerr << "   at:";
+        // 以及已计算出的位置信息，从而可以跟踪 flit 的传输
+		for (auto x: wire_add_t)
+			cerr << " " << x;
+		cerr << endl;
+
 		VC_type outadd_t = output_module_.get_add(i);
 		power_module_.power_link_traversal(i, flit_t.data());
 
+        // 把 flit 从当前路由器移除，并发送消息至下一跳
 		output_module_.remove_flit(i);
 		output_module_.remove_add(i);
 		mess_queue::wm_pointer().add_message(mess_event(flit_delay_t,
