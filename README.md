@@ -2,7 +2,7 @@
 
 Resource of School of Software Engineering, South China University of Technology (SCUT).
 
-Currently includ:
+Currently including:
 
 - C++ experiment 
 - Data structure experiment 
